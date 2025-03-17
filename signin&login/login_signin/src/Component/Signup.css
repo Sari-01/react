@@ -1,0 +1,108 @@
+.signup-container {
+    display: grid;
+    place-items: center;
+}
+
+/* this is for setting the whole square box for any kinda screen size*/
+
+.signup-container h1 {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.signup-square {
+    background-color: whitesmoke;
+    width: 600px;
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 35%; */
+}
+
+label {
+    margin-bottom: 10px;
+    /* Add space below the label */
+    margin-left: 20px;
+    display: inline-block;
+    /* Ensures proper spacing without affecting layout */
+}
+
+input {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+label select {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+textarea {
+    margin-left: 20px;
+}
+
+.address-group label {
+    display: block;
+}
+
+input[type='submit'] {
+    margin-left: 170px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.signup-container button {
+    margin-left: 70px;
+    cursor: pointer;
+}
+
+.signup-container p {
+    margin-left: 170px;
+    margin-top: 20px;
+}
+
+.popup-signup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* this background color is used to show once the pop up is shown it is used to show the background color */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.popup-content-signup {
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    width: 250px;
+    height: 250px;
+}
+
+.popup-content-signup p {
+    margin-left: 2px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.popup-content-signup .success_signin {
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.popup-content-signup h2 {
+    text-align: center;
+}
+
+.popup-content-signup .error_in_signin {
+    margin-left: 60px;
+    margin-top: 20px;
+}

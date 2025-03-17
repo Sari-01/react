@@ -1,0 +1,9 @@
+.backHome {
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 13px 20px;
+    cursor: pointer;
+    background-color: gray;
+    border-radius: 10px;
+    border-color: darkkhaki;
+}

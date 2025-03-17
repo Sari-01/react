@@ -1,0 +1,151 @@
+body {
+  background-color: darkkhaki;
+  margin: 0;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* Column layout to separate h1 and the sections */
+
+  /* Welcome (h1)
+---------------------
+| Left |  Right     |  (split sections)
+--------------------- */
+  /* as we planned like this the flex direction is mandatory */
+
+  align-items: center;
+  /* Center the h1 horizontally */
+  /* justify-content: space-between; */
+}
+
+.main-container h1 {
+  color: whitesmoke;
+  margin: 20px 0;
+  /* Add spacing */
+  /* text-align: center; */
+}
+
+
+.split-sections {
+  display: flex;
+  flex: 1;
+  /* Takes up remaining space after the h1 */
+  width: 100%;
+  /* Occupies full width of the container */
+}
+
+.left-section {
+  flex: 1;
+  /* Takes up half the split screen */
+  background-color: #2c3e50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  /* Makes the div a circle */
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* Clips the content */
+  /* CSS property is used to handle content that overflows its container. When applied, it ensures that any content that spills outside the boundaries of an element is clipped (hidden) and does not appear outside the element. */
+  text-align: center;
+  /* this is used to align the alt text in center */
+}
+
+.right-section {
+  flex: 1;
+  /* It’s a quick and simple way to ensure items stretch or shrink proportionally to fill or share space within a container, especially in layouts like split screens. */
+  background-color: #d4b0228f;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  /*looks fitted into the circle without coming out */
+  /* border-radius: 5%; */
+  display: block;
+}
+
+.square {
+  background-color: #2c3e50;
+  width: 300px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.square h1 {
+  color: rgb(229, 200, 8);
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.btn button {
+  border-radius: 5px;
+  padding: 10px, 20px;
+  cursor: pointer;
+  font-size: medium;
+  background-color: rgba(220, 200, 14, 0.872);
+}
+
+/* .signup-btn{
+  background-color: rgba(220, 200, 14, 0.872);
+}
+
+.login-btn{
+  background-color: rgba(220, 200, 14, 0.872);
+} */
+
+.main-container .popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* this background color is used to show once the pop up is shown it is used to show the background color */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+
+.popup .popup-content {
+  background: whitesmoke;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  width: 400px;
+  height: 450px;
+}
+
+.btn-grp button {
+  padding: 4px 10px 4px 10px;
+}
+
+.btn-grp .submission {
+  margin-left: 3px;
+  margin-top: 40px;
+  margin-right: 20px;
+}
