@@ -1,0 +1,54 @@
+for creating react component automatically: 
+
+functional component : rfc(react functional component)/rfac (react funcitonal arrow component)
+class component: rcc+tab(react class component+tab key)/ rcc (react class component)
+
+rafc : 
+
+import React from 'react'
+
+export const Scooty = () => {
+  return (
+    <div>Scooty</div>
+  )
+}
+
+rfc:
+
+import React from 'react'
+
+export default function Scooty() {
+  return (
+    <div>Scooty</div>
+  )
+}
+
+---------------------------------------------------------------------
+
+Hooks like useState, useEffect, useContext, etc., were introduced in React 16.8, and they work only in functional components.
+
+---------------------------------------------------------------------
+
+to change the title in the tab ---> find in index.html
+
+---------------------------------------------------------------------
+
+we should not set the component name and the state name as same. if it happens it throws the sonarlint warning 
+
+example: 
+export default function Scooty() {
+    const [Scooty, setScooty] = useState({
+        color: 'blue',
+        type: 'fascino',
+        year: 2023
+    })
+    
+ these two scooty (component name and state name are same it should be like that)
+ 
+export default function Scooty() {
+    const [scooty, setScooty] = useState({
+        color: 'blue',
+        type: 'fascino',
+        year: 2023
+    })
+  Now it is correct(difference is shown as lower and upper case)
