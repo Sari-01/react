@@ -1,0 +1,32 @@
+Use Case in Expense Tracker
+
+Without JWT:
+Problem: Every time a user performs an action (e.g., adding an expense), you would need to re-check their credentials (email/password). This is inefficient and less secure.
+
+With JWT:
+Solution: After a user logs in, the server sends a token that the client uses in subsequent requests. You validate the token to allow or deny access.
+Example: Only logged-in users can:
+View their expenses.
+Add new expenses.
+Delete expenses.
+
+How JWT Works in Your Expense Tracker
+Login:
+
+User logs in using email and password.
+Server generates a token and sends it back to the client.
+Token contains user info (e.g., id, email) in a secure, encoded form.
+Subsequent API Requests:
+
+The client includes the token in the Authorization header (Bearer <token>).
+The server validates the token using the secret key and allows access.
+Protected Routes:
+
+Routes like GET /expenses or POST /expenses are protected using middleware.
+Middleware checks if the token is valid before allowing the request to proceed.
+
+
+Why You Don’t Need to Import the User Model
+The ref field simply tells Mongoose which model to refer to. Mongoose already knows about the User model because you've registered it using mongoose.model('User', userSchema).
+
+When you use populate, Mongoose automatically fetches the User data based on the reference.
