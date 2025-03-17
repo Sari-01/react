@@ -1,0 +1,118 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+body{
+  background-color: black
+}
+h1{
+  text-align: center;
+  color: whitesmoke
+}
+button {
+  font-size: medium;
+  border-radius: 5px;
+  border-width: 5px;
+  border-color: rgb(34, 139, 34);
+  background-color: whitesmoke;
+  margin-top: 10px;
+  float: left; /* Align button to the left */
+  margin-right: 50px; /* Add some space between button and table */
+  cursor: pointer;
+  margin-left: 2px;
+}
+table{
+  border: 3px solid forestgreen;
+  margin-left: 10px;
+}
+th{
+  color:azure;
+  border: 2px solid black;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-left:20px;
+  padding-right: 20px;
+}
+td{
+  color:aliceblue;
+  padding-left: 20px;
+}
+.custom-button {
+  font-size: medium;
+  background-color: whitesmoke;
+  margin-top: 10px;
+  float: left;
+  margin-right: 50px;
+  cursor: pointer;
+  margin-left: 2px;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* this background color is used to show once the pop up is shown it is used to show the background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: grey;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  width: 250px;
+}
+.popup-content h2{
+  color: rgb(215, 143, 34);
+  text-align: center;
+}
+.popup-content button{
+  color:black(0, 255, 94);
+  border-radius: 7px;
+  float: center;
+  background-color: white;
+  margin-left: 70px;
+}
+.popup-content p{
+  margin-top:60px;
+  margin-left: 40px;
+}
+
