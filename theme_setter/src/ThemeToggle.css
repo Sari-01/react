@@ -1,0 +1,37 @@
+/* index.css or App.css */
+
+/* Default light theme */
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+  }
+  
+  /* Dark theme */
+  :root[data-theme='dark'] {
+    --background-color: #121212;
+    --text-color: #fff;
+  }
+  
+  /* Light theme */
+  :root[data-theme='light'] {
+    --background-color: #fff;
+    --text-color: #000;
+  }
+  
+  /* body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  } */
+  
+  button {
+    background: none;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--background-color);
+  }
+  
